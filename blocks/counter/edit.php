@@ -5,6 +5,7 @@ defined('C5_EXECUTE') or die('Access denied');
 use Concrete\Core\Application\Service\UserInterface;
 use Concrete\Core\Form\Service\Form;
 use Concrete\Core\Support\Facade\Application;
+use Concrete\Core\View\View;
 
 /** @var int $duration */
 /** @var array $items */
@@ -21,7 +22,7 @@ echo $ui->tabs([
     ['options', t('Options')],
 ]);
 
-\Concrete\Core\View\View::element("dashboard/help_blocktypes", [], "counter");
+View::element("dashboard/help_blocktypes", [], "counter");
 ?>
 
 <div class="tab-content">
@@ -36,7 +37,14 @@ echo $ui->tabs([
     <div id="options" class="tab-pane">
         <div class="form-group">
             <?php echo $form->label("duration", t("Duration")); ?>
-            <?php echo $form->number("duration", $duration, ["min" => 0]); ?>
+
+            <div class="input-group">
+                <?php echo $form->number("duration", $duration, ["min" => 0, "class" => "form-control"]); ?>
+
+                <div class="input-group-text">
+                    <?php echo t("ms"); ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
