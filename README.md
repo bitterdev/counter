@@ -1,0 +1,3 @@
+# Counter 
+
+The Counter add-on for Concrete CMS is the perfect solution for animating statistics and key figures on your website. As a dedicated block type, it allows you to define a target number, and once the block enters the viewport, the number smoothly counts up from zero to the specified value. This is ideal for showcasing impressive stats like completed projects, happy clients, years of experience, or any other data-driven highlights. Easy to configure and fully responsive, the Counter block adds a dynamic and professional touch to any corporate or portfolio site, helping you present achievements in a visually
