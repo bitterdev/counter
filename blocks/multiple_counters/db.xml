@@ -4,7 +4,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 http://concrete5.github.io/doctrine-xml/doctrine-xml-0.5.xsd">
 
-    <table name="btCounter">
+    <table name="btMultipleCounters">
         <field name="bID" type="integer">
             <unsigned/>
             <key/>
@@ -14,6 +14,19 @@
             <unsigned/>
             <default value="1000"/>
         </field>
+    </table>
+
+    <table name="btMultipleCounterItems">
+        <field name="id" type="integer">
+            <unsigned/>
+            <autoincrement/>
+            <key/>
+        </field>
+
+        <field name="bID" type="integer">
+            <unsigned/>
+        </field>
+
         <field name="value" type="integer"/>
         <field name="description" type="text"/>
     </table>

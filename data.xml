@@ -2,5 +2,6 @@
 <concrete5-cif version="1.0">
     <blocktypes>
         <blocktype handle="counter" package="counter"/>
+        <blocktype handle="multiple_counters" package="counter"/>
     </blocktypes>
 </concrete5-cif>
