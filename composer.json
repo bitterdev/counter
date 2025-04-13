@@ -1,0 +1,5 @@
+{
+  "name": "bitter/counter",
+  "type": "concrete5-package",
+  "description": "Animate numbers counting up to a target value when they become visible on screen."
+}
