@@ -23,6 +23,9 @@ echo $ui->tabs([
 ]);
 
 View::element("dashboard/help_blocktypes", [], "counter");
+
+/** @noinspection PhpUnhandledExceptionInspection */
+View::element("dashboard/did_you_know", [], "counter");
 ?>
 
 <div class="tab-content">
